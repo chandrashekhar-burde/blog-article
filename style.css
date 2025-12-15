@@ -9,13 +9,11 @@ html {
 
 body {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: beige;
 }
 
 main {
+    margin: 30px auto;
     max-width: 80vw;
     background-color: #fff;
     box-shadow: 0 0 10px #ddd;
@@ -71,4 +69,26 @@ main {
 .text::first-letter {
     font-size: 2em;
     font-weight: bold;
+}
+
+#other-article {
+    padding: 20px;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.article1, .article2 {
+    padding: 10px;
+    background-color: #fed;
+    border-radius: 6px;
+}
+
+.article1 div, .article2 div {
+    font-weight: bold;
+}
+
+#other-article p {
+    text-align: justify;
 }
